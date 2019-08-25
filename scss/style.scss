@@ -1,0 +1,58 @@
+$mainColor: #FFFFFF;
+$bgcolor: #4dafff;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+  
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: $bgcolor;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  .playzone {
+    width: 300px;
+    height: 300px;
+    border: 2px solid $mainColor;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+  }
+
+  .block {
+    cursor: pointer;
+    text-align: center;
+    box-sizing: border-box;
+    width: 100px;
+    height: 100px;
+    border: 1px solid $mainColor;
+    p {
+      color: $mainColor;
+      font-family: Arial;
+      position: relative;
+      top: 50%;
+      margin-top: -45px;
+      font-size: 80px;
+    }
+  }
+
+  .reset {
+    padding: 10px;
+    width: 80px;
+    height: 35px;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: $mainColor;
+    border: none;
+    color: $bgcolor;
+  }
+}  
